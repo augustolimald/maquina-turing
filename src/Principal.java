@@ -3,8 +3,8 @@ import java.util.List;
 
 public class Principal {
     public static void main(String[] args) {
-        String arquivoInput = "data.txt";// args[0];
-        String arquivoOutput = "output.txt";//args[1];
+        String arquivoInput = args[0];
+        String arquivoOutput = args[1];
 
         try {
             MaquinaTuring mt = ManipuladorArquivo.ler(arquivoInput);

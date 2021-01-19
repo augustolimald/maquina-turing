@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -11,7 +10,7 @@ public class ManipuladorArquivo {
     private static final String PATH = new File("").getAbsolutePath();
     
     public static MaquinaTuring ler(String endereco) throws Exception {
-        try (BufferedReader arquivo = new BufferedReader(new FileReader(PATH + "\\" + endereco))) {
+        try (BufferedReader arquivo = new BufferedReader(new FileReader(endereco))) {
             arquivo.readLine(); // (
             
             /**
@@ -77,7 +76,7 @@ public class ManipuladorArquivo {
     }
     
     public static void escrever(String endereco, String conteudo) throws Exception {
-        try (FileWriter arquivo = new FileWriter(PATH + "\\" + endereco)) {
+        try (FileWriter arquivo = new FileWriter(endereco)) {
             arquivo.write(conteudo);
             arquivo.write("\n");
         } catch (Exception e) {
