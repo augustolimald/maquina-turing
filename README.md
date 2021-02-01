@@ -14,5 +14,5 @@ java -jar dist/MaquinaTuring.jar input.txt output.txt
 ```
 
 ## Desenvolvedores
-[Augusto César Rodrigues Lima](https://github.com/augustolimald)
+[Augusto César Rodrigues Lima](https://github.com/augustolimald)<br>
 [Vinícius Antônio Carvalho Leite](https://github.com/Viniciud)
