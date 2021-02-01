@@ -1,6 +1,6 @@
 # Máquina de Turing
 
-O objetivo dessa aplicação é desenvolver uma Máquina de Turing Determinística Padrão que computa funções numéricas.
+O objetivo dessa aplicação é desenvolver uma Máquina de Turing Determinística Padrão que computa funções numéricas para a disciplina de Teoria da Computação do curso de Sistemas de Informação na Universidade Federal de Lavras.
 
 ## Organização do código-fonte
 * [Transicao.java](./src/Transicao.java): Representa uma transição de um estado para outro. Armazena o estado inicial, o caractere a ser lido, o caractere a ser escrito, o estado para qual a máquina irá e qual operação precisa ser feita na fita.
@@ -12,3 +12,7 @@ O objetivo dessa aplicação é desenvolver uma Máquina de Turing Determinísti
 ```
 java -jar dist/MaquinaTuring.jar input.txt output.txt
 ```
+
+## Desenvolvedores
+[Augusto César Rodrigues Lima](https://github.com/augustolimald)
+[Vinícius Antônio Carvalho Leite](https://github.com/Viniciud)
