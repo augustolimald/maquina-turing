@@ -9,6 +9,14 @@ import java.util.List;
 public class ManipuladorArquivo {
     private static final String PATH = new File("").getAbsolutePath();
     
+     /**
+       * Lê um arquivo pré-formatado e separa os dados em Quantidade de Estados, Alfabeto de Entrada, 
+       * Alfabeto da Fita, Transições, Estado inicial e fita
+       * 
+       * @param endereco
+       * @return 
+       * @throws Exception
+       */
     public static MaquinaTuring ler(String endereco) throws Exception {
         try (BufferedReader arquivo = new BufferedReader(new FileReader(endereco))) {
             arquivo.readLine(); // (
@@ -75,6 +83,13 @@ public class ManipuladorArquivo {
         }
     }
     
+    /**
+     * Escreve o conteúdo desejado no arquivo que é informado através do endereço
+     * 
+     * @param endereco
+     * @param conteudo
+     * @throws Exception
+     */
     public static void escrever(String endereco, String conteudo) throws Exception {
         try (FileWriter arquivo = new FileWriter(endereco)) {
             arquivo.write(conteudo);
